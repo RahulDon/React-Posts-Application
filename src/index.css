@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ffc107;
+  background: linear-gradient(to right, #ffc107, rgb(255, 252, 51));
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+  --mainBlue: #212172;
+  --lightblue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+nav{
+  background: var(--mainBlue);
+}
+
+.nav-link{
+  color: var(--mainWhite) !important;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.component-padding {
+  padding-top: 100px;
+}
+
+.logoutBtn{
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
+  border: 0.5rem solid var(--lightblue);
+  border-color: var(--mainYellow);
+  color: var(--mainYellow);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+}
+
+.listBorder {
+  border: 0.1rem solid var(--lightblue);
+  border-color: var(--mainDark);
+  margin-top: 10px;
+  border-radius: 0.9rem;
+} 
+
+.title-heading {
+  color: #ff00ea;
+  margin: 20px 10px;
+  
+}
+
+.titleBox {
+  margin-top: 10px;
+  border: 0.5rem solid var(--mainYellow);
+  border-color: var(--mainYellow);
+  border-radius: 2.5rem;
+  background-color: #ff00ea;
+  color: #000000;
+}
+
+.bodyBox {
+  color: #ff0040;
+  font-size: 25px;
+}
+
+.listCommentBorder {
+  border: 0.1rem solid var(--lightblue);
+  border-color: #ff00ea;
+  border-radius: 2.5rem;
 }
